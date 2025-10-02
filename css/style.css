@@ -31,34 +31,34 @@
   font-family: var(--Montserrat);
 }
 
-h1:not(.navbar *),
-h2:not(.navbar *),
-h3:not(.navbar *),
-h4:not(.navbar *),
-h5:not(.navbar *),
-h6:not(.navbar *),
-.display-1:not(.navbar *),
-.display-2:not(.navbar *),
-.display-3:not(.navbar *),
-.display-4:not(.navbar *),
-.display-5:not(.navbar *),
-.display-6:not(.navbar *) {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
   transition: all 0.5s ease-in-out;
   font-family: var(--Caprasimo);
 }
 
-h1:not(.navbar *):hover,
-h2:not(.navbar *):hover,
-h3:not(.navbar *):hover,
-h4:not(.navbar *):hover,
-h5:not(.navbar *):hover,
-h6:not(.navbar *):hover,
-.display-1:not(.navbar *):hover,
-.display-2:not(.navbar *):hover,
-.display-3:not(.navbar *):hover,
-.display-4:not(.navbar *):hover,
-.display-5:not(.navbar *):hover,
-.display-6:not(.navbar *):hover {
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover,
+.display-1:hover,
+.display-2:hover,
+.display-3:hover,
+.display-4:hover,
+.display-5:hover,
+.display-6:hover {
   text-shadow: 0 0.1rem 1rem rgba(110, 110, 110, 0.5);
 }
 

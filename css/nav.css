@@ -1,48 +1,37 @@
-nav.navbar {
+nav {
   box-shadow: 0 0.1rem 1rem 0.2rem rgba(0, 0, 0, 0.2);
   border-radius: 0 0 0.75rem 0.75rem;
   padding: 0 2rem;
 }
 
-.navbar,
-.navbar *,
-.navbar *::before,
-.navbar *::after {
+/* Override all hover and transition effects in navbar */
+.navbar * {
   transform: none !important;
-  transition: none !important;
-  scale: 1 !important;
+  transition: color 0.3s ease !important;
 }
 
-.navbar-brand,
-.navbar-brand:hover,
-.navbar-brand:focus,
-.navbar-brand h1,
-.navbar-brand h1:hover,
-.navbar-nav,
-.nav-item,
-.nav-link {
+.navbar *:hover {
   transform: none !important;
-  transition: none !important;
   text-shadow: none !important;
-  scale: 1 !important;
 }
 
 .navbar-brand h1 {
   margin: 0;
   padding: 0;
-  font-size: 2rem;
-}
-
-.nav-link {
-  color: rgba(255, 255, 255, 0.75);
 }
 
 .nav-link:hover {
-  color: rgba(255, 255, 255, 1) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Remove card hover effects from navbar */
+.navbar .card:hover {
+  transform: none !important;
+  box-shadow: none !important;
 }
 
 @media (max-width: 768px) {
-  nav.navbar {
+  nav {
     padding: 0;
   }
 }
