@@ -1,0 +1,21 @@
+.dashboard {
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
+}
+
+.video {
+  position: relative;
+  width: 100%; /* take full width */
+  max-width: 800px; /* optional: limit maximum size */
+  margin: auto;
+  aspect-ratio: 16 / 9; /* keeps video proportions */
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

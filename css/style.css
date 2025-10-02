@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "./landing.css";
+@import "./login.css";
+@import "./register.css";
+@import "./dashboard.css";
+
+:root {
+  --Caprasimo: "Caprasimo", serif;
+  --Flower: "Indie Flower", cursive;
+  --Montserrat: "Montserrat", sans-serif;
+  --white: rgba(255, 255, 255, 1);
+  --black: rgba(0, 0, 0, 1);
+  --bs-primary: #3a3f51; /* muted navy */
+  --bs-secondary: #6c757d; /* keep gray */
+  --bs-success: #4a6550; /* muted green */
+  --bs-danger: #7a3b3b; /* muted red */
+  --bs-warning: #b79c5e; /* muted yellow/gold */
+  --bs-info: #5a7a88; /* muted teal/blue */
+  --bs-light: #f4f4f4; /* soft light gray */
+  --bs-dark: #222; /* near-black */
+  --border-rad: 0.3rem;
+  --trans-speed: 0.5s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--Montserrat);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  transition: all 0.5s ease-in-out;
+  font-family: var(--Caprasimo);
+}
+
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover,
+.display-1:hover,
+.display-2:hover,
+.display-3:hover,
+.display-4:hover,
+.display-5:hover,
+.display-6:hover {
+  text-shadow: 0 0.1rem 1rem rgba(110, 110, 110, 0.5);
+}
+
+p > a {
+  text-decoration: none;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow: auto;
+}
+.hide-scrollbar::-webkit-scrollbar,
+.hide-scrollbar::-webkit-scrollbar-button {
+  display: none;
+}
+
+.d-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.d-column-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+}
+
+.d-column-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  text-align: end;
+}
+
+.d-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--black);
+  height: auto;
+  color: var(--bs-light);
+}
+
+.card {
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.1rem 1rem 0.2rem rgba(255, 255, 255, 0.2);
+}

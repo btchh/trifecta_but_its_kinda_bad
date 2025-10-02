@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" routerLink="">
+            <h1>Bj</h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./view/register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="./view/login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="landing hide-scrollbar container-fluid vh-100 p-0">
+      <app-nav></app-nav>
+      <div>
+        <section class="title d-column-center">
+          <div>
+            <div>
+              <h1 class="display-1">Blank Journal</h1>
+              <p class="">Leave the noise behind. Write with no distraction</p>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-center gap-3">
+              <button class="btn register-btn" type="button" routerLink="/register">Get Started</button>
+              <button class="btn login-btn" type="button" routerLink="/login">Login</button>
+            </div>
+          </div>
+        </section>
+        <section class="d-column-center quote-sect vh-100">
+          <div>
+            <h1 class="display-1">Ease the chaos</h1>
+            <p>Order is not the absence of chaos, but the courage to shape it.</p>
+          </div>
+        </section>
+        <section class="container">
+          <hr />
+        </section>
+        <section class="d-column-center quote-sect vh-100">
+          <div>
+            <h2 class="display-2">Pause & Reflect</h2>
+            <p>Capture fleeting moments before they disappear. Write freely, think deeply, and let Blank Journal be your mirror as you grow.</p>
+          </div>
+        </section>
+        <section class="container carousel-sect vh-100">
+          <div id="w5hCarousel" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#w5hCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#w5hCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#w5hCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#w5hCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#w5hCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#w5hCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/w5h1.gif" class="d-block w-100" alt="What is Blank Journal" />
+                <div class="carousel-caption d-block">
+                  <h5>What?</h5>
+                  <p>Blank Journal is your personal, private, and secure online diary — designed to help you capture thoughts, reflections, and experiences with ease.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/w5h2.gif" class="d-block w-100" alt="Who uses Blank Journal" />
+                <div class="carousel-caption d-block">
+                  <h5>Who?</h5>
+                  <p>Anyone who values privacy and reflection: students, writers, creators, and anyone who wants a safe place to document their journey.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/w5h3.gif" class="d-block w-100" alt="Why Blank Journal exists" />
+                <div class="carousel-caption d-block">
+                  <h5>Why?</h5>
+                  <p>Because your thoughts matter. Blank Journal helps you track your growth, release stress, and build a digital legacy that’s just for you.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/w5h4.gif" class="d-block w-100" alt="When to use Blank Journal" />
+                <div class="carousel-caption d-block">
+                  <h5>When?</h5>
+                  <p>Anytime, anywhere. Write when inspiration strikes — on your phone, tablet, or computer.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/w5h5.gif" class="d-block w-100" alt="Where your journal is stored" />
+                <div class="carousel-caption d-block">
+                  <h5>Where?</h5>
+                  <p>Stored securely in the cloud, accessible only by you. Take your journal wherever life takes you.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/w5h6.gif" class="d-block w-100" alt="How Blank Journal works" />
+                <div class="carousel-caption d-block">
+                  <h5>How?</h5>
+                  <p>Through simplicity and security. Easy-to-use writing tools, mood tracking, and password protection ensure your story is yours alone.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#w5hCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#w5hCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+        <section class="d-column-center feats h-auto">
+          <div class="mb-3">
+            <div>
+              <h3 class="display-3">Core Features</h3>
+            </div>
+            <div class="container d-row-center flex-wrap">
+              <div class="card bg-dark text-light" style="width: 18rem">
+                <img src="./images/card1.gif" class="card-img-top ci" alt="Typing on the keyboard" />
+                <div class="card-body">
+                  <h4 class="card-title">Journal Entries</h4>
+                  <ul>
+                    <li>Create, edit, delete and recover entries</li>
+                    <li>Rich text editor</li>
+                    <li>Automatic date & time stamps</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card bg-dark text-light" style="width: 18rem">
+                <img src="./images/card2.gif" class="card-img-top ci" alt="Green binary text" />
+                <div class="card-body">
+                  <h4 class="card-title">Authentication</h4>
+                  <ul>
+                    <li>Login/Register via email</li>
+                    <li>Password Encryption</li>
+                    <li>2 Factor Authentication</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card bg-dark text-light" style="width: 18rem">
+                <img src="./images/card5.gif" class="card-img-top ci" alt="Green binary text" />
+                <div class="card-body">
+                  <h4 class="card-title">Core Roadmap</h4>
+                  <p>
+                    <em>More core features coming soon...</em>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div>
+              <h3 class="display-3">Planned Features</h3>
+            </div>
+            <div class="container d-row-center flex-wrap">
+              <div class="card bg-light text-dark" style="width: 18rem">
+                <img src="./images/card3.gif" class="card-img-top ci" alt="Typing on the keyboard" />
+                <div class="card-body">
+                  <h4 class="card-title">Mood Tracking</h4>
+                  <ul>
+                    <li>Daily, Weekly, Monthly mood tracking</li>
+                    <li>Color coded</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card bg-light text-dark" style="width: 18rem">
+                <img src="./images/card4.gif" class="card-img-top ci" alt="Green binary text" />
+                <div class="card-body">
+                  <h4 class="card-title">Offline Access</h4>
+                  <ul>
+                    <li>txt, pdf or md file exporting</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card bg-light text-dark" style="width: 18rem">
+                <img src="./images/card6.gif" class="card-img-top ci" alt="Green binary text" />
+                <div class="card-body">
+                  <h4 class="card-title">Future Feature Roadmap</h4>
+                  <p>
+                    <em>More features coming soon...</em>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="footer bg-dark text-light py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <h4>Blank Journal</h4>
+                <p class="small">Leave the noise behind. Write with no distraction</p>
+              </div>
+              <div class="col-md-4 mb-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="/" class="text-decoration-none text-light">Home</a>
+                  </li>
+                  <li>
+                    <a href="/register" class="text-decoration-none text-light">Get Started</a>
+                  </li>
+                  <li>
+                    <a href="/login" class="text-decoration-none text-light">Login</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4 mb-4">
+                <h5>Connect</h5>
+                <p class="small">Have feedback or questions? Reach out to me.</p>
+                <div class="d-flex gap-3">
+                  <ul class="list-unstyled">
+                    <li>📧 ma6957692@gmail.com</li>
+                    <li>
+                      <a href="https://www.instagram.com/d.btchh_/" target="_blank" class="text-decoration-none text-light"> 📸 @d.btchh_ </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="border-light opacity-25" />
+            <div class="text-center small">© Blank Journal — All Rights Reserved.</div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script src="./js/scripts.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+</html>

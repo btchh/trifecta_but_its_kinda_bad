@@ -1,0 +1,11 @@
+nav {
+  box-shadow: 0 0.1rem 1rem 0.2rem rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 0.75rem 0.75rem;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 0;
+  }
+}
