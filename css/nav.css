@@ -4,6 +4,32 @@ nav {
   padding: 0 2rem;
 }
 
+/* Override all hover and transition effects in navbar */
+.navbar * {
+  transform: none !important;
+  transition: color 0.3s ease !important;
+}
+
+.navbar *:hover {
+  transform: none !important;
+  text-shadow: none !important;
+}
+
+.navbar-brand h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Remove card hover effects from navbar */
+.navbar .card:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
 @media (max-width: 768px) {
   nav {
     padding: 0;
