@@ -27,6 +27,7 @@ $(document).ready(function () {
       password: {
         required: "Please enter your password",
         minlength: "Password must be at least 8 characters",
+        maxlength: "Username must not exceed 20 characters",
       },
     },
     errorClass: "text-danger",
@@ -43,7 +44,7 @@ $(document).ready(function () {
         alert("Login successful! Welcome back, " + currentUser.fullname + "!");
         window.location.href = "./dashboard.html";
       } else {
-        alert("Invalid username or password!");
+        alert("User not registered or invalid username or password!");
       }
     },
   });
@@ -108,7 +109,6 @@ $(document).ready(function () {
       const userData = {
         username: username,
         email: email,
-        registeredAt: new Date().toISOString(),
       };
 
       localStorage.setItem("currentUser", JSON.stringify(userData));
@@ -122,16 +122,13 @@ $(document).ready(function () {
 $(document).ready(function () {
   const currentUser = JSON.parse(localStorage.getItem("currentUser") || "{}");
 
-  // Always show welcome message + profile (no if/else hiding)
   $("#welcomeMessage").text("Welcome, " + (currentUser.username || "Guest") + "!");
   $("#displayUsername").text(currentUser.username || "N/A");
   $("#displayEmail").text(currentUser.email || "N/A");
 
-  // Logout functionality
   $("#logoutBtn, #logoutBtn2").click(function () {
     localStorage.removeItem("loggedInUser");
     localStorage.removeItem("currentUser");
-    alert("You have been logged out!");
     window.location.href = "./login.html";
   });
 });
