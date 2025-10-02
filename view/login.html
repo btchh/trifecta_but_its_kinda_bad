@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -49,7 +51,7 @@
 
     <div class="login container-fluid vh-100 p-0">
       <section class="d-column-end vh-100">
-        <form action="">
+        <form id="login" method="post">
           <div class="inpt-cont">
             <div class="d-column-start">
               <h1 class="display-1">Blank Journal</h1>
@@ -57,15 +59,15 @@
             </div>
             <hr />
             <div class="d-column-start mb-2">
-              <label for="username" id="username">Username</label>
-              <input type="text" class="inpt" placeholder="Username" />
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" class="inpt" placeholder="Username" />
             </div>
             <div class="d-column-start mb-4">
-              <label for="password" id="password">Password</label>
-              <input type="password" class="inpt" placeholder="Password" />
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" class="inpt" placeholder="Password" />
             </div>
             <div class="mb-4">
-              <button class="btn btn-dark" routerLink="/dashboard">Login</button>
+              <button class="btn btn-dark" type="submit">Login</button>
             </div>
             <div class="text-center">
               <p>Not a BRiter yet? <a href="./register.html">Register Now!</a></p>
@@ -74,11 +76,12 @@
         </form>
       </section>
     </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./../js/scripts.js"></script>
   </body>
-  <script src="./js/scripts.js"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"
-  ></script>
 </html>
