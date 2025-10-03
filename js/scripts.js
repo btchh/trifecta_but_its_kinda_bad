@@ -114,7 +114,7 @@ $(document).ready(function () {
       localStorage.setItem("currentUser", JSON.stringify(userData));
 
       alert("Registration successful! Welcome " + username + "!");
-      window.location.href = "./dashboard.html";
+      window.location.href = "./login.html";
     },
   });
 });
