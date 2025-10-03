@@ -34,14 +34,13 @@ $(document).ready(function () {
     errorElement: "small",
     submitHandler: function (form) {
       const username = $("#username").val();
-      const password = $("#password").val();
 
       const currentUser = JSON.parse(localStorage.getItem("currentUser") || "{}");
 
       if (currentUser.username === username) {
         localStorage.setItem("loggedInUser", username);
 
-        alert("Login successful! Welcome back, " + currentUser.fullname + "!");
+        alert("Login successful! Welcome back, " + currentUser.username + "!");
         window.location.href = "./dashboard.html";
       } else {
         alert("User not registered or invalid username or password!");
